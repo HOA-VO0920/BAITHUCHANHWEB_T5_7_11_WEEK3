@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thư viện ảnh</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(#b3faff, #cbe69a);
+      padding: 20px;
+      margin: 0;
+    }
+
+    h3 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h3>Tạo thư viện ảnh đơn giản</h3>
+  <div class="gallery">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidpBDiZOXoRbbSJfs-mKPgNtiFSYQs3URUZM0XS0fnkTLhMa9wp94fNpcL_3rGktHfZ9c8Co_-Epizioi8UZcoUzTWR9zy-P6YGkLiFlqLCLpNqTx2udoZKf6OwU_6ah7LJobJCaqglfFK/s1280/tranh-phong-canh-dep-2.jpg" alt="Ảnh 1">
+    <img src="https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/10/tai-anh-phong-canh-dep-3.jpg" alt="Ảnh 2">
+    <img src="https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?cs=srgb&dl=pexels-pixabay-147411.jpg&fm=jpg" alt="Ảnh 3">
+    <img src="https://hoanghamobile.com/tin-tuc/wp-content/uploads/2023/07/anh-phong-canh-dep-41.jpg" alt="Ảnh 4">
+    <img src="https://cdn-media.sforum.vn/storage/app/media/ctvseo_MH/%E1%BA%A3nh%20phong%20c%E1%BA%A3nh%20%C4%91%E1%BA%B9p/anh-phong-canh-dep-1.jpg" alt="Ảnh 5">
+    <img src="https://hoanghamobile.com/tin-tuc/wp-content/uploads/2023/07/anh-phong-canh-dep-36.jpg" alt="Ảnh 6">
+  </div>
+</body>
+</html>
