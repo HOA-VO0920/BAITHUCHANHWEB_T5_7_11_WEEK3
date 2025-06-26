@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Giới thiệu bản thân - Võ Thị Hòa</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #44a6fc, #a2d4ff);
+      color: #302323;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh; }
+
+    .container {
+      background-color: white;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+      max-width: 900px;
+      width: 90%;
+      flex-wrap: wrap;}
+
+    .avatar {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+
+    .avatar img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #44a6fc;  }
+
+    .info {
+      flex: 2;
+      text-align: left; }
+
+    .info p {
+      line-height: 1.6;
+      margin: 12px 0; }
+    .decription {
+      line-height: 1.6;
+      margin: 12px 0;
+      text-align: justify;}
+      
+    .info strong {
+      color: #005b9f; }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;  }
+      .info {
+        text-align: center; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="avatar">
+      <img src="https://s120-ava-talk.zadn.vn/b/d/c/1/31/120/ad67b20210af517fe7374db6f7ddea90.jpg" alt="Ảnh đại diện">
+    </div>
+    <div class="info">
+      <p><strong>Võ Thị Hòa</strong></p>
+      <p><em>20-9-2005</em></p>
+      <p><strong>Sở thích:</strong> Vẽ, thiết kế</p>
+      <p class="decription"> 
+        Tôi tên là Hòa, là một người yêu thích nghệ thuật và sáng tạo. Sở thích lớn nhất của tôi là vẽ và thiết kế.
+        Tôi thường dành thời gian rảnh để phác họa những ý tưởng mới hoặc thiết kế các sản phẩm mang tính thẩm mỹ cao.
+        Việc vẽ giúp tôi thư giãn, rèn luyện sự kiên nhẫn và khả năng quan sát.
+        Tôi đặc biệt thích thiết kế đồ họa và thời trang vì nó cho phép tôi thể hiện cá tính qua màu sắc và hình khối.
+        Tôi là người tỉ mỉ, sáng tạo và luôn muốn học hỏi để hoàn thiện bản thân hơn mỗi ngày.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
+
