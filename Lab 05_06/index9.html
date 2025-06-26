@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chèn Audio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url(https://byvn.net/j7mx);
+      padding: 30px;
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .audio-box {
+      display: grid;
+      grid-template-rows: auto auto;
+      gap: 15px;
+      max-width: 400px;
+      padding: 20px;
+      background-color: #bff5c9;
+      border: 1px solid #454242;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .audio-box h3 {
+      margin: 0;
+      font-size: 20px;
+      color: #333;
+    }
+
+    audio {
+      width: 100%;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="audio-box">
+    <h3>Hồi chuông cảnh tỉnh khỏi ảo tưởng</h3>
+    <audio controls>
+      <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/mpeg">
+      Trình duyệt của bạn không hỗ trợ audio.
+    </audio>
+  </div>
+</body>
+</html>
