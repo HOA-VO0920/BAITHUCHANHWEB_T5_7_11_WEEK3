@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio cá nhân</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #b9cff0;
+      padding: 30px;
+      color: #333;
+    }
+
+    h3 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    p.intro {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .project {
+      background: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      background-color: #e8f4ff;
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover img {
+      transform: scale(1.03);
+    }
+
+    .project a {
+      display: inline-block;
+      margin: 10px 0;
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .project a:hover {
+      text-decoration: underline;
+    }
+
+    .project-description {
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <h3>Trang portfolio cá nhân</h3>
+  <p class="intro">Dưới đây là một số dự án tiêu biểu của tôi:</p>
+
+  <div class="portfolio">
+    <!-- Dự án 1 -->
+    <div class="project">
+      <img src="IMG/IMG1.PNG" alt="Dự án 1" />
+      <a href="https://github.com/HOA-VO0920/VoThiHoa_WEEK10.git" target="_blank">
+        Link Dự Án GitHub 1
+      </a>
+      <div class="project-description">
+        <p><strong>Mô tả:</strong> Dự án chứa nhiều định dạng dữ liệu như .txt, .xls, .sql, .mdb, .bak.</p>
+        <ul>
+          <li>Thực hành nhập dữ liệu từ file văn bản và Excel vào CSDL</li>
+          <li>Truy vấn SQL trên dữ liệu thực tế</li>
+          <li>Làm việc với nhiều hệ quản trị CSDL: SQL Server, Access, v.v.</li>
+        </ul>
+        <p><strong>Tên file chính:</strong> VoThiHoa_23684601_W9.sql</p>
+      </div>
+    </div>
+
+    <!-- Dự án 2 -->
+    <div class="project">
+      <img src="IMG/linkin.png" alt="LinkedIn Profile" />
+      <a href="https://www.linkedin.com/in/chloe-vox-bb94042bb/" target="_blank">
+        Hồ sơ LinkedIn
+      </a>
+      <div class="project-description">
+        <p>Trang LinkedIn cá nhân thể hiện kinh nghiệm học tập và làm việc, các kỹ năng nổi bật, chứng chỉ đạt được.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
