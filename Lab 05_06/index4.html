@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Form Đăng Kí Thông Tin</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to top, #fff7f7, #f8b8b8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #00796b;
+      margin-bottom: 10px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    input, select {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      transition: border-color 0.3s;
+    }
+
+    input:focus, select:focus {
+      border-color: #00796b;
+      outline: none;
+    }
+
+    button {
+      padding: 12px;
+      font-size: 16px;
+      background-color: #00796b;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #004d40;
+    }
+
+    @media (min-width: 600px) {
+      .form-row {
+        display: flex;
+        gap: 20px;
+      }
+
+      .form-group {
+        flex: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <h2>FORM ĐĂNG KÍ THÔNG TIN</h2>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="name">Họ tên</label>
+        <input type="text" id="name" placeholder="Nhập họ tên" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Nhập email" />
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="phone">SĐT</label>
+        <input type="tel" id="phone" placeholder="Nhập số điện thoại" />
+      </div>
+      <div class="form-group">
+        <label for="gender">Giới tính</label>
+        <select id="gender">
+          <option value="">-- Chọn giới tính --</option>
+          <option value="nam">Nam</option>
+          <option value="nu">Nữ</option>
+          <option value="khac">Khác</option>
+        </select>
+      </div>
+    </div>
+
+    <button type="submit">Gửi</button>
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Liên Kết Điều Hướng</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fefee9;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h3 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .menu a {
+      font-size: 18px;
+      color: #00796b;
+      text-decoration: none;
+      position: relative;
+      padding: 8px 12px;
+      transition: color 0.3s ease;
+    }
+
+    .menu a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 2px;
+      width: 100%;
+      background-color: #00796b;
+      transform: scaleX(0);
+      transform-origin: bottom right;
+      transition: transform 0.3s ease;
+    }
+
+    .menu a:hover {
+      color: #004d40;
+    }
+
+    .menu a:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  </style>
+</head>
+<body>
+
+  <h3>Tạo liên kết điều hướng đến các trang khác nhau</h3>
+  <div class="menu">
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+    <a href="https://www.youtube.com" target="_blank">YouTube</a>
+    <a href="https://chat.openai.com" target="_blank">ChatGPT</a>
+  </div>
+
+</body>
+</html>
